@@ -1,0 +1,147 @@
+<main class="main contentPage">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About us</li>
+            </ol>
+        </div><!-- End .container -->
+    </nav><!-- End .breadcrumb-nav -->
+    <div class="container">
+        <div class="page-header page-header-big text-center"
+            style="background-image: url('assets/images/about-header-bg.jpg')">
+            <h1 class="page-title text-white">About us<span class="text-white">Who we are</span></h1>
+        </div><!-- End .page-header -->
+    </div><!-- End .container -->
+
+    <div class="page-content pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-3 mb-lg-0">
+                    <h2 class="title">Our Vision</h2><!-- End .title -->
+                    <p>Révolutionner l’expérience Shopping en Afrique. </p>
+                </div><!-- End .col-lg-6 -->
+
+                <div class="col-lg-6">
+                    <h2 class="title">Our Mission</h2><!-- End .title -->
+                    <p>Fournir des produits 100% authentiques avec les meilleurs prix au Maroc et Offrir la plateforme
+                        d’achat la plus pratique avec meilleure assistance au Maroc. </p>
+
+
+                </div><!-- End .col-lg-6 -->
+            </div><!-- End .row -->
+
+            <div class="mb-5"></div><!-- End .mb-4 -->
+        </div><!-- End .container -->
+
+        <div class="bg-light-2 pt-6 pb-5 mb-6 mb-lg-8 pl-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 mb-3 mb-lg-0">
+                        <h2 class="title">Who We Are</h2><!-- End .title -->
+                        <p class="lead text-primary mb-3">SHAHRAZAD est le site e-commerce N° 1 au Maroc dont l’objectif
+                            et la vision sont de fournir le plus large assortiment au meilleur prix pour tous les
+                            Marocains.
+                            <br>
+                        </p><!-- End .lead text-primary -->
+                        <p class="mb-2">SHAHRAZAD propose une qualité de services adaptés au e-commerce en Afrique :
+                            livraison dans tout le royaume, méthodes de paiement flexibles (paiement en cash à la
+                            livraison, par carte bancaire) et retours gratuits sous un délai de 7 jours.</p>
+
+                        <a href="/home" class="btn btn-sm btn-minwidth btn-outline-primary-2">
+                            <span class="text-uppercase"> Commencer votre shopping</span>
+                            <i class="icon-long-arrow-right"></i>
+                        </a>
+                    </div><!-- End .col-lg-5 -->
+
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="about-images">
+                            <img src="assets/images/about/img-1.jpg" alt="" class="about-img-front">
+                            <img src="assets/images/about/img-2.jpg" alt="" class="about-img-back">
+                        </div><!-- End .about-images -->
+                    </div><!-- End .col-lg-6 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+        </div><!-- End .bg-light-2 pt-6 pb-6 -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="brands-text">
+                        <h2 class="title">The world's premium design brands in one destination.</h2>
+                        <!-- End .title -->
+                        <p>Marques Nationale & Internationale</p>
+                    </div><!-- End .brands-text -->
+                </div><!-- End .col-lg-5 -->
+                <div class="col-lg-7">
+                    <div class="brands-display">
+                        <div class="row justify-content-center">
+                            <div *ngFor="let marque of listeMarque" class="col-6 col-sm-4">
+                                <a href="#" class="brand">
+                                    <img src={{marque.imageUrl}} alt={{marque.name}}>
+                                </a>
+                            </div><!-- End .col-sm-4 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .brands-display -->
+                </div><!-- End .col-lg-7 -->
+            </div><!-- End .row -->
+
+
+        </div><!-- End .container -->
+
+        <div class="mb-2"></div><!-- End .mb-2 -->
+
+        <div class="about-testimonials bg-light-2 pt-6 pb-6">
+            <div class="container">
+                <h2 class="title text-center mb-3">Our Promise</h2><!-- End .title text-center -->
+
+                <div class="owl-carousel owl-simple owl-testimonials-photo" data-toggle="owl" data-owl-options='{
+                                "nav": false, 
+                                "dots": true,
+                                "margin": 20,
+                                "loop": false,
+                                "responsive": {
+                                    "1200": {
+                                        "nav": true
+                                    }
+                                }
+                            }'>
+                    <blockquote class="testimonial text-center">
+                        <img src="assets/images/testimonials/user-1.jpg" alt="user">
+                        <p>“ Any worries? Our 24/7 customer service is always here to help. You can easily find out our
+                            friendly customer advisor by Facebook live chat, Twitter, Instagram, email or phone. ”</p>
+                        <cite>
+
+                            Customer Service
+                            <span>Customer</span>
+                        </cite>
+                    </blockquote><!-- End .testimonial -->
+
+                    <blockquote class="testimonial text-center">
+                        <img src="assets/images/testimonials/user-3.png" alt="user">
+                        <p>“ Security at its finest! All bellewholesale customers are guaranteed a secure online
+                            shopping experience and shop with confidence. ”</p>
+
+                        <cite>
+                            Secuer Checkout
+                            <span>Checkout</span>
+                        </cite>
+                    </blockquote><!-- End .testimonial -->
+
+                    <blockquote class="testimonial text-center">
+                        <img src="assets/images/testimonials/user-2.jpg" alt="user">
+                        <p>“ Cooperating with internationally renowned logistics operators, we offer a different
+                            shipping options to fit every customer's need. ”</p>
+
+                        <cite>
+                            Fast Delivery
+                            <span>Delivery</span>
+                        </cite>
+                    </blockquote><!-- End .testimonial -->
+
+                </div><!-- End .testimonials-slider owl-carousel -->
+            </div><!-- End .container -->
+        </div><!-- End .bg-light-2 pt-5 pb-6 -->
+    </div><!-- End .page-content -->
+</main><!-- End .main -->

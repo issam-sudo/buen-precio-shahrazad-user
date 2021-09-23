@@ -1,0 +1,87 @@
+<main class="main">
+
+    <!-- End .page-header -->
+    <nav aria-label="breadcrumb" class="breadcrumb-nav contentPage">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+            </ol>
+        </div>
+        <!-- End .container -->
+    </nav>
+    <!-- End .breadcrumb-nav -->
+
+    <div class="page-content contentPage">
+        <div class="container">
+            <div *ngFor="let faq of faqItems; let indexOfelement=index;">
+                <h2 class="title text-center mb-3">{{faq.title}}</h2>
+                <!-- End .title -->
+                <div class="accordion accordion-rounded" [id]="'accordion-'+indexOfelement">
+                    <div *ngFor="let faqList of faq.faqDetails; let indexOfelementDetails=index; "
+                        class="card card-box card-sm bg-light">
+                        <div class="card-header" [id]="'heading-' + indexOfelement+indexOfelementDetails">
+                            <h2 class="card-title">
+                                <a class="collapsed" role="button" data-toggle="collapse"
+                                    [href]="'#collapse-'+indexOfelement+indexOfelementDetails" aria-expanded="false">
+                                    {{faqList.faqTitle}}
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- End .card-header -->
+                        <div [id]="'collapse-'+indexOfelement+indexOfelementDetails" class="collapse">
+                            <div class="card-body">
+                                {{faqList.rep}}
+                            </div>
+                            <!-- End .card-body -->
+                        </div>
+                        <!-- End .collapse -->
+                    </div>
+                    <!-- End .card -->
+
+
+                </div>
+                <!-- End .accordion -->
+            </div>
+
+            <div>
+
+            </div>
+
+
+        </div>
+        <!-- End .container -->
+    </div>
+    <!-- End .page-content -->
+
+    <div class="cta cta-display bg-image pt-4 pb-4"
+        style="background-image: url(assets/images/backgrounds/cta/bg-7.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-9 col-xl-7">
+                    <div class="row no-gutters flex-column flex-sm-row align-items-sm-center">
+                        <div class="col">
+                            <h3 class="cta-title text-white">If You Have More Questions</h3>
+                            <!-- End .cta-title -->
+                            <p class="cta-desc text-white">Quisque volutpat mattis eros</p>
+                            <!-- End .cta-desc -->
+                        </div>
+                        <!-- End .col -->
+
+                        <div class="col-auto">
+                            <a [routerLink]="['/contact']" routerLinkActive="router-link-active" class="btn btn-outline-white"><span>CONTACT US</span><i
+                                    class="icon-long-arrow-right"></i></a>
+                        </div>
+                        <!-- End .col-auto -->
+                    </div>
+                    <!-- End .row no-gutters -->
+                </div>
+                <!-- End .col-md-10 col-lg-9 -->
+            </div>
+            <!-- End .row -->
+        </div>
+        <!-- End .container -->
+    </div>
+    <!-- End .cta -->
+</main>

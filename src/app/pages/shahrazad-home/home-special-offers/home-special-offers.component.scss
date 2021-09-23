@@ -1,0 +1,30 @@
+::ng-deep .countdown {
+    height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+
+
+     .two-dots {
+       display: none;
+     
+     }
+     .measurements-number{
+       font-size: 15px;
+       line-height: 11px;
+       font-weight: 700;
+
+     }
+     .measurements {
+       color: white; 
+       font-size: 10px;
+       display: grid;
+       
+    }
+
+    .divider {
+     font-size: 30px;
+    }
+
+   }

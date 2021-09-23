@@ -110,7 +110,8 @@
 }
 
 .banner, .banner img {
-    border-radius: .2rem
+    border-radius: .2rem;
+   
 }
 
 .banner-content-stretch .banner-content {
